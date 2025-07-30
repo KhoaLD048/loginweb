@@ -1,0 +1,160 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--text-main);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #3a60e3, #5a6ee6, #3a60e3);
+  min-height: 100vh;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  z-index: 0;
+  overflow: hidden;
+}
+
+
+header {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+main {
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container {
+  background: #313338;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px #0004;
+  display: flex;
+  padding: 32px 24px;
+  gap: 24px;
+}
+
+
+.login-form {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.login-form label {
+  color: #b5bac1;
+  font-size: 0.9rem;
+  margin-top: 12px;
+  display: block;
+}
+.required {
+  color: #f23f43;
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #232428;
+  background: #1e1f22;
+  color: #fff;
+}
+.forgot {
+  color: #00a8fc;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+}
+.login-btn {
+  width: 100%;
+  padding: 10px 0;
+  background: #5865f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register {
+  margin-top: 14px;
+  color: #b5bac1;
+  font-size: 0.95rem;
+}
+.register a {
+  color: #00a8fc;
+  text-decoration: none;
+}
+
+.login-qr {
+  width: 180px;
+  text-align: center;
+}
+.qr-box {
+  background: #232428;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.qr-box img {
+  width: 120px;
+  height: 120px;
+}
+.qr-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.qr-desc {
+  color: #b5bac1;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+.passkey {
+  color: #00a8fc;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
