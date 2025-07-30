@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Discord Login Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/discord.svg" alt="Discord Logo" class="logo">
+    <span class="brand">Discord</span>
+  </header>
+  <main>
+    <div class="login-container">
+      <div class="login-form">
+        <h2>Welcome back!</h2>
+        <p class="subtitle">We're so excited to see you again!</p>
+        <form>
+          <label for="email">EMAIL OR PHONE NUMBER <span class="required">*</span></label>
+          <input type="text" id="email" name="email" autocomplete="username" required>
+          <label for="password">PASSWORD <span class="required">*</span></label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+          <a href="#" class="forgot">Forgot your password?</a>
+          <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <div class="register">
+          Need an account? <a href="#">Register</a>
+        </div>
+      </div>
+      <div class="login-qr">
+        <div class="qr-box">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=discordapp.com" alt="QR Code">
+        </div>
+        <div class="qr-text">
+          <div class="qr-title">Log in with QR Code</div>
+          <div class="qr-desc">
+            Scan this with the <b>Discord mobile</b> app to log in instantly.
+          </div>
+          <a href="#" class="passkey">Or, sign in with passkey</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>    
